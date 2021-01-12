@@ -2250,7 +2250,7 @@ footer p {
   </footer>
   
   <script>
-  	const searchIcon = document.querySelector(&quot;.search-icon&quot;);
+  		const searchIcon = document.querySelector(&quot;.search-icon&quot;);
 		const searchContainer = document.querySelector(&quot;.search-container&quot;);
 		const mobileMenuContainer = document.querySelector(&quot;.mobile-menu-container&quot;);
 		const mobileMenuIcon = document.querySelector(&quot;.mobile-menu-icon&quot;);
