@@ -318,6 +318,13 @@ body.archive-view .entry-content img:first-child {
 }
 
 /* Comments Section */
+.comments .comments-content .comment {
+  margin-bottom: 0;
+}
+
+.comments .comments-content .comment-thread {
+  margin: 0;
+}
 
 .comments .comments-content .comment-thread ol:first-child {
   box-shadow: 0 0.25rem 0.5rem -0.125rem rgba(0, 0, 0, 0.3);
@@ -519,8 +526,6 @@ body.archive-view .post-body .read-more-container .read-more {
 }
 
 .social-icons {
-  background: #535353;
-  padding: 1rem 0.5rem;
   max-width: 16.25rem;
   border-radius: 0.625rem;
   display: grid;
@@ -531,7 +536,9 @@ body.archive-view .post-body .read-more-container .read-more {
 }
 
 .social-icons img {
-  margin: 1.25rem;
+  margin: 0.75rem;
+  width: 3.25rem;
+  height: 3.25rem;
 }
 
 /* Status Message */
@@ -1054,6 +1061,7 @@ footer p {
     <b:widget-setting name='style.linkcolor'>#3a3a3a</b:widget-setting>
     <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
     <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+    <b:widget-setting name='reactionsLabel'/>
     <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
     <b:widget-setting name='style.layout'>1x1</b:widget-setting>
     <b:widget-setting name='showLabels'>true</b:widget-setting>
@@ -2093,32 +2101,32 @@ footer p {
             <b:widget id='HTML3' locked='false' title='El frasco en' type='HTML'>
               <b:widget-settings>
                 <b:widget-setting name='content'>&lt;div class=&#39;social-icons&#39;&gt;
-                         &lt;a href=&#39;https://www.instagram.com/FrascoDeHistorias/&#39;&gt;
-                             &lt;img alt=&#39;instagram&#39; src=&#39;https://1.bp.blogspot.com/-feTj2-96qrc/X-PU8xSggYI/AAAAAAAAXNY/-3zN495ShKA8Rhs68bz7WJZUPVT4GMM5ACLcBGAsYHQ/s36/instagram-logo.png&#39;/&gt;
+                         &lt;a href=&#39;https://www.instagram.com/FrascoDeHistorias/&#39; target=&quot;_blank&quot;&gt;
+                             &lt;img alt=&#39;instagram&#39; src=&#39;https://1.bp.blogspot.com/-mc8XQgBBs-E/YIsTkultKoI/AAAAAAAAYRk/_IfIsB2zczA0m5cEV4TsLYAtyWGjaKGOgCLcBGAsYHQ/s1200/intagram.png&#39;/&gt;
                          &lt;/a&gt;                        
-                         &lt;a href=&#39;https://www.facebook.com/elfrascodehistorias&#39;&gt;
-                             &lt;img alt=&#39;facebook&#39; src=&#39;https://1.bp.blogspot.com/-AYoV8gRBxHs/X-PU7LKC0GI/AAAAAAAAXNI/5yHk54mMALcXkUheUMBJquOT3G47Ve1qgCLcBGAsYHQ/s36/facebook-logo.png&#39;/&gt;
+                         &lt;a href=&#39;https://www.facebook.com/cynstories&#39; target=&quot;_blank&quot;&gt;
+                             &lt;img alt=&#39;facebook&#39; src=&#39;https://1.bp.blogspot.com/-PCDSl8_j7HI/YIsUjmibxgI/AAAAAAAAYSY/qRmCz2P5Z84wDIDnzPj0NwWxLuqrEcP6gCLcBGAsYHQ/s320/facebook.png&#39;/&gt;
                          &lt;/a&gt;
-                         &lt;a href=&#39;https://twitter.com/ce_y_ene&#39;&gt;
-                             &lt;img alt=&#39;twitter&#39; src=&#39;https://1.bp.blogspot.com/-tLxPCVyBSu0/X-PU--ldrFI/AAAAAAAAXN4/l0GXGynUvzwyV-b3EZsseRTr1GYIoFdogCLcBGAsYHQ/s36/twitter-logo.png&#39;/&gt;
+                         &lt;a href=&#39;https://twitter.com/ce_y_ene&#39; target=&quot;_blank&quot;&gt;
+                             &lt;img alt=&#39;twitter&#39; src=&#39;https://1.bp.blogspot.com/-qqfgNuhlqv4/YIsUjl6ftOI/AAAAAAAAYSU/xXaU90tGp0w6Wn0nq7Ji2SyLwfCTkTkUQCLcBGAsYHQ/s320/twitter.png&#39;/&gt;
                          &lt;/a&gt;
-                         &lt;a href=&#39;https://getinkspired.com/es/u/ce_y_ene/&#39;&gt;
-                             &lt;img alt=&#39;inskpired&#39; src=&#39;https://1.bp.blogspot.com/-HlQWK6VL58s/X-PU8bnjW3I/AAAAAAAAXNU/ERlQbkEsjp88Sum0WyUGg3YA_bRv2MSEwCLcBGAsYHQ/s33/inkspired-logo.png&#39;/&gt;
+                         &lt;a href=&#39;https://getinkspired.com/es/u/cynstories/&#39; target=&quot;_blank&quot;&gt;
+                             &lt;img alt=&#39;inskpired&#39; src=&#39;https://1.bp.blogspot.com/-DcCGMKMk-pU/YIsTkZg49KI/AAAAAAAAYRc/JQYTSVXjeoEHWqKnfuzYwpqHhblVwqKHQCLcBGAsYHQ/s700/inkspired.png&#39;/&gt;
                          &lt;/a&gt;                        
-                         &lt;a href=&#39;https://www.wattpad.com/user/Cyn-Jaz&#39;&gt;
-                             &lt;img alt=&#39;wattpad&#39; src=&#39;https://1.bp.blogspot.com/-DbJVFubci-M/X-PU_DgHhtI/AAAAAAAAXN8/QJRxi6fHkU8R3fNiIvepjafoisj04hWEwCLcBGAsYHQ/s33/wattpad-logo.png&#39;/&gt;
+                         &lt;a href=&#39;https://www.wattpad.com/user/CynStories&#39; target=&quot;_blank&quot;&gt;
+                             &lt;img alt=&#39;wattpad&#39; src=&#39;https://1.bp.blogspot.com/-RU_iexVeUyg/YIsTmFSD76I/AAAAAAAAYR0/qAm3-IXY0JY_fpHKqotYdvOf9aU4mr26QCLcBGAsYHQ/s1024/wattpad.png&#39;/&gt;
                          &lt;/a&gt;
-                         &lt;a href=&#39;https://booknet.com/es/cyn-romero-u1132139&#39;&gt;
-                             &lt;img alt=&#39;booknet&#39; src=&#39;https://1.bp.blogspot.com/-odlVd1lOHrs/X-PU7ZAbIHI/AAAAAAAAXNE/Ely-NQkNxPgZ2iF5OvtV9bRih0XI5TNyACLcBGAsYHQ/s33/booknet-logo.png&#39;/&gt;
+                         &lt;a href=&#39;https://booknet.com/es/cyn-romero-u1132139&#39; target=&quot;_blank&quot;&gt;
+                             &lt;img alt=&#39;booknet&#39; src=&#39;https://1.bp.blogspot.com/-2vikyFN5tdk/YIsTjcgeIKI/AAAAAAAAYRY/kNJf-87RC4YdzQRD0WGXz2sJH1dzapWcACLcBGAsYHQ/s160/booknet.png&#39;/&gt;
                          &lt;/a&gt;
-                         &lt;a href=&#39;https://sweek.com/es/profile/88381/74088&#39;&gt;
-                             &lt;img alt=&#39;sweek&#39; src=&#39;https://1.bp.blogspot.com/-4SMPPFQgGqs/X-PU-yZa0PI/AAAAAAAAXN0/vFot9iEEQ9891wKeIo6qP_eT8nL21jnawCLcBGAsYHQ/s33/sweek-logo.png&#39;/&gt;
+                         &lt;a href=&#39;https://sweek.com/es/profile/88381/74088&#39; target=&quot;_blank&quot;&gt;
+                             &lt;img alt=&#39;sweek&#39; src=&#39;https://1.bp.blogspot.com/-msOCKklDPl4/YIsTlTiynmI/AAAAAAAAYRo/E61YuudxAk0oQWYV_xAIDCY7d5hOxmOtgCLcBGAsYHQ/s320/sweek.png&#39;/&gt;
                          &lt;/a&gt;                        
-                         &lt;a href=&#39;http://www.megustaescribir.com/autor/35604/cynthia-romero&#39;&gt;
-                             &lt;img alt=&#39;me gusta escribir&#39; src=&#39;https://1.bp.blogspot.com/-S28KyZMBKus/X-PU-HgqzWI/AAAAAAAAXNo/C2RIPtOrOR8_EAJZofMfjsHYwYCMWO8-gCLcBGAsYHQ/s33/megustaesc-logo.png&#39;/&gt;
+                         &lt;a href=&#39;http://www.megustaescribir.com/autor/35604/cynthia-romero&#39; target=&quot;_blank&quot;&gt;
+                             &lt;img alt=&#39;me gusta escribir&#39; src=&#39;https://1.bp.blogspot.com/-ZtvrYHteDDY/YIsTlmoGXmI/AAAAAAAAYRs/B-CEuexaSG8Nm194bGv7DVe_rFs4cngCACLcBGAsYHQ/s320/megustaescribir.png&#39;/&gt;
                          &lt;/a&gt;
-                         &lt;a href=&#39;https://www.goodreads.com/user/show/43727476-cyn-romero&#39;&gt;
-                             &lt;img alt=&#39;goodreads&#39; src=&#39;https://1.bp.blogspot.com/-HvoYHamogMc/X-PU8VOwngI/AAAAAAAAXNQ/1dni18gqMxQ4Kvlz2dURDqRtbiyARs7zgCLcBGAsYHQ/s33/goodreads-logo.png&#39;/&gt;
+                         &lt;a href=&#39;https://www.goodreads.com/user/show/43727476-cyn-romero&#39; target=&quot;_blank&quot;&gt;
+                             &lt;img alt=&#39;goodreads&#39; src=&#39;https://1.bp.blogspot.com/-lq-eP9dn-Yk/YIsTjXGHhFI/AAAAAAAAYRQ/xFlBbIUeNXoWETgMctfaHeJ5JlhBzD6pACLcBGAsYHQ/s320/goodreads.png&#39;/&gt;
                          &lt;/a&gt;
                    &lt;/div&gt;</b:widget-setting>
               </b:widget-settings>
@@ -2136,7 +2144,7 @@ footer p {
             </b:widget>
             <b:widget id='HTML2' locked='false' title='' type='HTML'>
               <b:widget-settings>
-                <b:widget-setting name='content'><![CDATA[<a href="https://bleiy.com/mapadeblogshispanos/"><img src="https://bleiy.com/mapadeblogshispanos/wp-content/uploads/2019/05/banner.jpg" width="200" /></a>]]></b:widget-setting>
+                <b:widget-setting name='content'><![CDATA[<a href="https://comunidadcincoliniera.com/"><img src="https://1.bp.blogspot.com/-3LDvC3_5PJE/YDvcsrhyAtI/AAAAAAAAXrY/LEz5X7JJeFs802jPqmSyEw5g8Br4PZGhgCLcBGAsYHQ/s320/bronce-reto-5-lineas.png" width="200" /></a>]]></b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
   <!-- only display title if it's non-empty -->
