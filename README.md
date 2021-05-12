@@ -1,6 +1,6 @@
 # HoneyBloggerTemplate 🐝 🍯
 
-My first Blogger Responsive Template.
+My Blogger Responsive Template from scratch.
 
 ## Made with:
 
