@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 .wrapper {
   width: 100%;
   display: flex;
@@ -301,6 +305,11 @@ body.archive-view .entry-content img:first-child {
 
 .entry-content a {
   color: #000;
+}
+
+.entry-content .separator a img {
+  width: 100%;
+  height: auto;
 }
 
 .post-outer:nth-of-type(1) {
@@ -708,6 +717,14 @@ footer p {
   }
 }
 
+/* Posts images size */
+
+@media (max-width: 768px) {
+  .entry-content .separator a img {
+	  max-width: 275px;
+  }
+}
+
 @media (max-width: 680px) {
 /* Header */
 
@@ -750,6 +767,18 @@ footer p {
     top: 30%;
     right: 45%;
 	width: 9vw;
+  }
+
+  /* Post images */
+  
+  .entry-content .separator a img {
+	max-width: none;
+  }
+
+  .post-body .entry-content .separator a {
+	clear: both;
+    float: none;
+	margin: 0 0 0.7rem 0;
   }
 }
 
@@ -836,7 +865,7 @@ footer p {
                     </li>
 
                     <li>
-                        <a expr:href='data:blog.homepageUrl + &quot;p/sobre-la-autora.html&quot;'>Sobre la autora</a>
+                        <a expr:href='data:blog.homepageUrl + &quot;p/sobre-la-autora.html&quot;'>La autora</a>
                     </li>
 
                     <li>
@@ -845,6 +874,10 @@ footer p {
 
                     <li>
                         <a expr:href='data:blog.homepageUrl + &quot;p/relatos-cortos.html&quot;'>Relatos por género</a>
+                    </li>
+                  
+                  <li>
+                        <a expr:href='data:blog.homepageUrl + &quot;p/desafios-de-escritura.html&quot;'>Desafíos escritura</a>
                     </li>
 
                     <li>
@@ -871,7 +904,7 @@ footer p {
                     </li>
 
                     <li>
-                        <a expr:href='data:blog.homepageUrl + &quot;p/sobre-la-autora.html&quot;'>Sobre la autora</a>
+                        <a expr:href='data:blog.homepageUrl + &quot;p/sobre-la-autora.html&quot;'>La autora</a>
                     </li>
 
                     <li>
@@ -880,6 +913,10 @@ footer p {
 
                     <li>
                         <a expr:href='data:blog.homepageUrl + &quot;p/relatos-cortos.html&quot;'>Relatos por género</a>
+                    </li>
+                  
+                    <li>
+                        <a expr:href='data:blog.homepageUrl + &quot;p/desafios-de-escritura.html&quot;'>Desafíos escritura</a>
                     </li>
 
                     <li>
@@ -1057,7 +1094,6 @@ footer p {
     <b:widget-setting name='showCommentLink'>true</b:widget-setting>
     <b:widget-setting name='style.urlcolor'>#2c2c2c</b:widget-setting>
     <b:widget-setting name='showAuthor'>false</b:widget-setting>
-    <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
     <b:widget-setting name='style.linkcolor'>#3a3a3a</b:widget-setting>
     <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
     <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
@@ -2101,10 +2137,10 @@ footer p {
             <b:widget id='HTML3' locked='false' title='El frasco en' type='HTML'>
               <b:widget-settings>
                 <b:widget-setting name='content'>&lt;div class=&#39;social-icons&#39;&gt;
-                         &lt;a href=&#39;https://www.instagram.com/FrascoDeHistorias/&#39; target=&quot;_blank&quot;&gt;
+                         &lt;a href=&#39;https://www.instagram.com/cynstories/&#39; target=&quot;_blank&quot;&gt;
                              &lt;img alt=&#39;instagram&#39; src=&#39;https://1.bp.blogspot.com/-mc8XQgBBs-E/YIsTkultKoI/AAAAAAAAYRk/_IfIsB2zczA0m5cEV4TsLYAtyWGjaKGOgCLcBGAsYHQ/s1200/intagram.png&#39;/&gt;
                          &lt;/a&gt;                        
-                         &lt;a href=&#39;https://www.facebook.com/cynstories&#39; target=&quot;_blank&quot;&gt;
+                         &lt;a href=&#39;https://www.facebook.com/jaz.m.min.5/&#39; target=&quot;_blank&quot;&gt;
                              &lt;img alt=&#39;facebook&#39; src=&#39;https://1.bp.blogspot.com/-PCDSl8_j7HI/YIsUjmibxgI/AAAAAAAAYSY/qRmCz2P5Z84wDIDnzPj0NwWxLuqrEcP6gCLcBGAsYHQ/s320/facebook.png&#39;/&gt;
                          &lt;/a&gt;
                          &lt;a href=&#39;https://twitter.com/ce_y_ene&#39; target=&quot;_blank&quot;&gt;
