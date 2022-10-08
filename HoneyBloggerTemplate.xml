@@ -21,10 +21,10 @@
     <link href='https://fonts.googleapis.com/css2?family=Spartan:wght@400;900&amp;family=Viaoda+Libre&amp;display=swap' rel='stylesheet'/>  
     <b:skin><![CDATA[
 
-/* ------------------------------------ */
-/* ------ Honey Blogger Template ------ */
-/* ----- by Cyn Romero  @ce_y_ene ----- */
-/* ------------------------------------ */
+/* ---------------------------------------------- */
+/* ------ Honey Blogger Template Dark Mode ------ */
+/* ---------- by Cyn Romero  @ce_y_ene ---------- */
+/* ---------------------------------------------- */
 
 * {
   margin: 0;
@@ -36,12 +36,19 @@ html {
   font-family: "Spartan", sans-serif;
 }
 
+body {
+  background-color: #000;
+}
+
 a {
   text-decoration: none;
 }
 
-p {
+.entry-content,
+.entry-content div,
+.entry-content p {
   margin-bottom: 1rem;
+  color: #fcfcfc;
 }
 
 .wrapper {
@@ -174,7 +181,7 @@ table.gsc-search-box td.gsc-input {
 }
 
 .header-wrapper .hero h1.main-heading {
-  color: #3a3a3a;
+  color: #fcfcfc;
   font-family: "Viaoda Libre", cursive;
   line-height: 1;
   font-size: 4rem;
@@ -182,7 +189,7 @@ table.gsc-search-box td.gsc-input {
 }
 
 .header-wrapper .hero p.main-subheading {
-  color: #000;
+  color: #bca772;
   font-size: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -213,7 +220,7 @@ a.btn {
 }
 
 .Header h1.title a {
-  color: #3a3a3a;
+  color: #fcfcfc;
 }
 
 /* Blog Section */
@@ -230,7 +237,7 @@ a.btn {
 .comment-link {
   font-size: 0.875rem;
   font-weight: 300;
-  color: #3a3a3a;
+  color: #fcfcfc;
 }
 
 .post-title {
@@ -256,11 +263,11 @@ a.btn {
 }
 
 .post-labels {
-  background: #fcfcfc;
+  background: #ececec;
   display: block;
   padding: 0.5rem 1rem;
   border-radius: 0.625rem;
-  box-shadow: 0 0.25rem 0.5rem -0.188rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.5rem -0.188rem rgba(257, 257, 257, 0.75);
 }
 
 .post-labels img {
@@ -304,7 +311,7 @@ body.archive-view .entry-content img:first-child {
 }
 
 .entry-content a {
-  color: #000;
+  color: #bd8f1b;
 }
 
 .entry-content .separator a img {
@@ -336,7 +343,7 @@ body.archive-view .entry-content img:first-child {
 }
 
 .comments .comments-content .comment-thread ol:first-child {
-  box-shadow: 0 0.25rem 0.5rem -0.125rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.25rem 0.5rem -0.125rem rgba(255, 255, 255, 0.8);
   padding: 1.875rem 1.25rem;
   margin: 2rem 0;
 }
@@ -352,6 +359,10 @@ body.archive-view .entry-content img:first-child {
 
 .comments .avatar-image-container img {
   width: 100%;
+}
+
+.comments h4 {
+  color: #fcfcfc;
 }
 
 .comments .comments-content .comment-header {
@@ -373,12 +384,16 @@ body.archive-view .entry-content img:first-child {
   padding: 0.625rem 1.5rem;
 }
 
+.comments .comments-content p {
+  color: #fcfcfc;
+}
+
 .comments .comments-content .comment-actions a,
 .comments .comments-content .comment-replies .continue a {
   min-width: 6.25rem;
   padding: 0.5rem 0.625rem;
   background: #fff;
-  color: #000;
+  color: #bd8f1b;
   text-align: center;
   font-weight: 600;
   box-shadow: 0 0.25rem 0.5rem -0.125rem rgba(0, 0, 0, 0.3);
@@ -394,7 +409,7 @@ body.archive-view .entry-content img:first-child {
 }
 
 .thread-count a {
-  color: #000;
+  color: #bd8f1b;
 }
 
 /* Read More Button */
@@ -417,13 +432,13 @@ body.archive-view .post-body::after {
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 48%,
-    rgba(255, 255, 255, 0.7) 77%,
-    rgba(236, 252, 255, 0) 100%
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 48%,
+    rgba(0, 0, 0, 0) 77%,
+    rgba(0, 0, 0, 0) 100%
   );
 }
 
@@ -445,15 +460,16 @@ body.label-view .post-body .read-more-container .read-more,
 body.archive-view .post-body .read-more-container .read-more {
   text-transform: uppercase;
   font-weight: bold;
-  color: #5e5c5c;
-  box-shadow: 0 0.25rem 0.5rem -0.125rem rgba(0, 0, 0, 0.2);
+  color: #000;
+  background-color: #fcfcfc;
+  box-shadow: 0 0.25rem 0.5rem -0.125rem rgba(255, 255, 255, 0.7);
   padding: 1rem;
 }
 
 /* Pagination */
 .blog-pager {
   padding: 1rem;
-  box-shadow: 0 0.25rem 0.9rem -0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.9rem -0.5rem rgba(255, 255, 255, 0.6);
 }
 
 .blog-pager a {
@@ -468,7 +484,7 @@ body.archive-view .post-body .read-more-container .read-more {
 }
 
 .sidebar a {
-  color: #000;
+  color: #bd8f1b;
 }
 
 .sidebar .section .widget {
@@ -515,6 +531,7 @@ body.archive-view .post-body .read-more-container .read-more {
 
 .Profile .widget-content .profile-datablock .profile-textblock {
   font-size: 0.8rem;
+  color: #fcfcfc;
 }
 
 .profile-link {
@@ -524,7 +541,7 @@ body.archive-view .post-body .read-more-container .read-more {
 .sidebar .section .widget .widget-content select {
   background-color: transparent;
   border: none;
-  color: inherit;
+  color: #fcfcfc;
   padding: 0.5rem;
   width: 100%;
   font-family: inherit;
@@ -532,6 +549,10 @@ body.archive-view .post-body .read-more-container .read-more {
   cursor: inherit;
   line-height: inherit;
   outline: none;
+}
+
+.sidebar .section .widget .widget-content select option {
+  background-color: #000;
 }
 
 .social-icons {
@@ -574,8 +595,8 @@ body.archive-view .post-body .read-more-container .read-more {
 
 footer {
   text-align: center;
-  background: #fcfcfc;
-  color: #000;
+  background: #000;
+  color: #fcfcfc;
   padding: 2.25rem;
   margin-top: 6.25rem;
 }
@@ -584,6 +605,13 @@ footer p {
   margin-top: 0.25rem;
 }
 
+.feed-links {
+  color: #fcfcfc;
+}
+
+.feed-links a {
+  color: #fcfcfc;
+}
 
 /* Hidden Items */
 
@@ -1477,15 +1505,15 @@ footer p {
                   <div class='blog-pager' id='blog-pager'>
                       <b:if cond='data:newerPageUrl'>
                           <span id='blog-pager-newer-link'>
-                              <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><img alt='Posts siguientes' src='https://1.bp.blogspot.com/-GE6L6db6uaI/X_R8ocozP0I/AAAAAAAAXWU/y2nHXygeR0oMzLYCfotaxBNJVPy9PsDrACLcBGAsYHQ/s35/prev.png'/></a>
+                              <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><img alt='Posts siguientes' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhG8lD9UI47u6MntIUzDkUJdLEcr4oaRzDcFd5gH-M6A8IWZnm8f1mbIgKj3Emc20DweoiTFGYFdzyymE9GM-vl-HfCzdLuXtgebYJNp9Ji9sStPs2GE04kdhR32JbNMqy3b3Lk_YHaZSQZklWKaN9LPn2A8x2arj0akU2cttGzFVMiN5fLC83DyeTI/s1600/prevlight-35px.png'/></a>
                           </span>
                       </b:if>
                       <b:if cond='data:olderPageUrl'>
                           <span id='blog-pager-older-link'>
-                              <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><img alt='Posts anteriores' src='https://1.bp.blogspot.com/-UuaFS7JUTvg/X_R8mj4c9kI/AAAAAAAAXWQ/n7A3RI81pR8KIK9jF1McyEmWOiei75PdgCLcBGAsYHQ/s0/next.png'/></a>
+                              <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><img alt='Posts anteriores' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMeoHBi93TqZNTKe6Xdf5hUURw5dTEK_BtRsi5udZMtGDAUwqczhu1PNzfAD65eDDJ36DPHqNjO0P_1SclECYkOMwUpgksTy_T2s5vBrY94LiKJsZ1zOXJRlwbsVBwlXeebu24T5DVwW_vsIztaNAp_c0rNteZACUJ6xyjDpUT0FBel_wOatMo-1tk/s1600/nextlight-35px.png'/></a>
                           </span>
                       </b:if>
-                      <a class='home-link' expr:href='data:blog.homepageUrl'><img alt='Volver al inicio' src='https://1.bp.blogspot.com/--qxIWmZ0jO0/X_R7kpg6VjI/AAAAAAAAXVo/LM_cDfiG-D4gKcu3GJGbT-7RvVlbkAshgCLcBGAsYHQ/s45/home.png'/></a>
+                      <a class='home-link' expr:href='data:blog.homepageUrl'><img alt='Volver al inicio' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3plyl2wEW0VkuCxje50FIgflCmDr_3W2vZLp1RKPDS2O-UU7KUUeoK7ocS-IeYOVPFJjySPZlGiiZY1MA8UDmJuXXzRxFRqpuksc_7gGVE9IEF-nHPQw--wdCBDRwNZkyqGO_4ioOmaxswzR3OUvZiptyt83sKFF3OyN2e2QMwusLe_391b1z521w/s1600/homelight-45px.png'/></a>
                       <b:if cond='data:mobileLinkUrl'>
                           <div class='blog-mobile-link'>
                               <a expr:href='data:mobileLinkUrl'><data:mobileLinkMsg/></a>
@@ -2110,13 +2138,13 @@ footer p {
               <b:widget-settings>
                 <b:widget-setting name='borderColorTransparent'>true</b:widget-setting>
                 <b:widget-setting name='useTemplateDefaultStyles'>true</b:widget-setting>
-                <b:widget-setting name='contentSecondaryTextColor'>#000000</b:widget-setting>
-                <b:widget-setting name='contentHeadlineColor'>#000000</b:widget-setting>
-                <b:widget-setting name='endcapTextColor'>#000000</b:widget-setting>
-                <b:widget-setting name='contentTextColor'>#000000</b:widget-setting>
+                <b:widget-setting name='contentSecondaryTextColor'>#FFFFFF</b:widget-setting>
+                <b:widget-setting name='contentHeadlineColor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='endcapTextColor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='contentTextColor'>#ffffff</b:widget-setting>
                 <b:widget-setting name='contentSecondaryLinkColor'>#FFFFFF</b:widget-setting>
-                <b:widget-setting name='endcapLinkColor'>#000000</b:widget-setting>
-                <b:widget-setting name='contentLinkColor'>#000000</b:widget-setting>
+                <b:widget-setting name='endcapLinkColor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='contentLinkColor'>#ffffff</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot; and data:codeSnippet != &quot;&quot;'>
